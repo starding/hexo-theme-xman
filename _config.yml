@@ -12,11 +12,11 @@ menu:
 
 #### Widgets
 widgets: 
-- rss
 #- github-card
 - category
 #- tag
 - links
+- rss
 #- douban
   ## provide eight widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo
 
@@ -29,8 +29,8 @@ rss: /atom.xml ## RSS address.
 imglogo:
   enable: true             ## display image logo true/false.
   src: img/white_logo_yao.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
-apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+favicon: img/favicon-yao.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
+apple_icon: img/white_logo_yao.png ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 author_img: img/author.png ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
 banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 ### Theme Color 

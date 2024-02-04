@@ -1,8 +1,8 @@
 ##### Menu
 menu:
   主页: /
-  时间线视图: /archives
-  关于我: /about
+  归档: /archives
+  关于: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -12,12 +12,12 @@ menu:
 
 #### Widgets
 widgets: 
-- github-card
-- category
-- tag
-- links
-- douban
 - rss
+#- github-card
+- category
+#- tag
+- links
+#- douban
   ## provide eight widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo
 
 
@@ -81,7 +81,6 @@ toc:
 #### Links
 links:
   硅谷王川: https://chuan.us, 虽然不认识，但我从他的言论中学到了很多
-  Jark's Blog: http://wuchong.me
 
 
 

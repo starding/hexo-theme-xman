@@ -87,18 +87,15 @@ links:
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
 disqus_shortname: xinghuading     ## e.g. wuchong   your disqus short name.
-gentie_key:           ## your 163 gentie key, see https://gentie.163.com/
 changyan_appid:       ## changyan app id, see http://changyan.kuaizhan.com/
 changyan_appkey:      ## changyan app key, see http://changyan.kuaizhan.com/
 
 
-#### Analytics
-google_analytics:
-  enable: false
-  id:        ## e.g. UA-46321946-2 your google analytics ID.
-  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
-## You MUST upgrade to Universal Analytics first!
-## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
+#### Google Analytics 4
+google_analytics_4:
+  enable: true
+  TAG_ID: G-K5Z9WLE5XK
+
 baidu_tongji:
   enable: true
   sitecode: e6d1f421bbc9962127a50488f9ed37d1 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code

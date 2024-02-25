@@ -86,14 +86,22 @@
           color: #fff
           text-decoration: none
           //text-shadow: 0 1px darken(color-theme, 20%)
+
+
+
 #archive-page
   section.post
+    width 100%
     a
+      display flex
       font-size 0.9em
       padding 0.5em !important
-      time
-        @media mini
-          padding-left 1em
+    h1
+      font-size 1.2em
+    time
+      padding 0 1em
+      font-size 1em !important
+
 
 
 
@@ -180,6 +188,7 @@
 .current
   color color-orange !important
 
+
 .archive-part
   @media mini
     min-height 200px
@@ -187,20 +196,6 @@
     //width 78% !important
     float right
     margin-left 2% !important
-  section.post
-    width 100%
-    time
-      font-size 1.1em !important
-      float left
-      @media phonemax
-        width 100%
-      @media phone
-        width 20%
-/*    @media mini
-      float left
-      width 50%
-    @media tablet
-      width 33.333%  */
 
 .archive-nav
   @media mini

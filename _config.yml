@@ -21,21 +21,22 @@ widgets:
   ## provide eight widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo
 
 
-
 #### RSS 
 rss: /atom.xml ## RSS address.
 
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
-  src: img/white_logo_yao.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
+  src: img/color_logo_yao.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon-yao.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
 apple_icon: img/white_logo_yao.png ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 author_img: img/author.png ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
 banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 ### Theme Color 
 theme_color:
-    theme: '#158553'    ##the defaut theme color is green
+    # theme: '#158553'    ##老 color
+    # theme: '#010920'    ##the defaut theme color is green
+    theme: '#000000'    ##the defaut theme color is green
 
 # 代码高亮主题
 # available: default | night
@@ -60,13 +61,12 @@ author:
 #  weibo_verifier: b3593ceb    ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
 #  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
 #  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
+#  zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
   email:      starstarding@gmail.com
   twitter:    starstarding
   github:     starding
 #  facebook:   ## e.g. imjark for https://facebook.com/imjark
 #  linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
-#  google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
 #  stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
 
@@ -79,7 +79,8 @@ toc:
 
 #### Links
 links:
-  硅谷王川: https://chuan.us, 虽然不认识，但我从他的言论中学到了很多
+  黄龑: http://finaltheory.me/, 18~26 岁期间对我影响很大的同学
+  硅谷王川: https://chuan.us, 虽然不认识，但 30 岁之后我从他的言论中学到了很多
 
 
 

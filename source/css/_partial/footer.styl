@@ -4,7 +4,14 @@ footer
   padding 0 2% 0.5em
 
 #footer
-  width 95%
+  width 93%
+  @media tablet
+    width 93%
+    max-width 1200px
+  @media desktop
+    width 80%
+    min-width 1200px 
+       
   margin 0 auto
   overflow hidden
   position relative
@@ -43,15 +50,9 @@ footer
     margin 0 0 1.5em
 
 .info
-  if ShowCustomFont
-    font-family font-custom-family 
-    font-smoothing()
-    font-size font-size+50
-    line-height 1.3em
-  else
-    font-family font-default
-    line-height line-height+0.15
-    font-size font-size
+  font-family font-default
+  line-height line-height+0.15
+  font-size font-size
   width 90%
   margin 0 auto
   color color-white
@@ -59,6 +60,11 @@ footer
     margin 4.5em 0 2em 0
     float left
     width 75%
+  p
+    @media phone
+      text-align center
+    @media tablet
+      text-align left
 
 .social-font
   width 100%
@@ -116,12 +122,8 @@ footer
 
 
 .copyright
-  if ShowCustomFont
-    font-smoothing()
-    font-family font-custom-family
-  else
-    font-family font-default
-    font-size 0.6em
+  font-family font-default
+  font-size 0.6em
   width 100%
   color color-white
   text-align center

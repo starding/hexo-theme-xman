@@ -1,16 +1,5 @@
 <header class="article-info clearfix">
-  <h1 itemprop="name">
-    <% if(item.link) { %>
-    <a href="<%- item.link %>" target="_blank" title="<%= item.title %>"
-      ><%= item.title %></a
-    ><% } else { %>
-    <a
-      href="<%- config.root %><%- item.path %>"
-      title="<%= item.title %>"
-      itemprop="url"
-      ><%= item.title %></a
-    ><% } %>
-  </h1>
+  <h1 itemprop="name"><%= item.title %></h1>
   <div class="article-info-meta">
     <p class="article-author">
       <% if(theme.author.google_plus){ %>

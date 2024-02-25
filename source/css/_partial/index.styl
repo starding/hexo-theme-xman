@@ -8,8 +8,10 @@
     width 96%
   @media tablet
     width 94%
+    max-width 1200px
   @media desktop
-    width 82%
+    width 75%
+    min-width 1200px
     
 #main
   margin 1em 0 0
@@ -21,18 +23,18 @@
     transition margin 0.5s ease-out
   section.post
     background color-section
-    margin-bottom 0.125em
+    margin-bottom 0.5px
     a
       display block
-      border-left 0.2em solid color-gray
+      border-left 0.1em solid color-gray
       transition border-left .45s
       padding 0.5em
       @media mini
         padding 1em
       &:hover
-        border-left 0.2em solid color-theme
+        border-left 0.1em solid color-theme
       h1
-        color color-blue
+        color #413f3f
         line-height line-height+0.5
       p
         color color-font
@@ -98,23 +100,17 @@
 .moveMain
   margin-left 10% !important
 
-.unexpand .prev
-  border-left 0.5em solid color-gray
-  &:hover
-    border-left 0.5em solid color-theme
 
 #page-nav
   background color-section
   text-align center
   overflow hidden
+  padding 1em 0
   a
     display inline-block
     padding 0.5em 1em
   a
     color color-blue
-    &:hover
-      background color-gray
-      color color-theme
   .prev
     float left
     transition border-left .5s
@@ -160,8 +156,6 @@
 .tag-icon:before
   content "\f02c"
   
-.archive-icon:before
-  content "\f187"
 
 .archive-title
   margin 1em 0
@@ -172,10 +166,10 @@
     padding-left 0.5%
     float left
   background color-section
-  border-left 0.2em solid color-gray
   h2
     width 90%
-    color color-blue
+    padding-left 0.5em
+    color color-title
     font-size font-size+20
   a
     color color-blue

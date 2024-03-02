@@ -26,7 +26,7 @@ git pull origin master
 
 ## Configuration
 
-Modify settings in  `/themes/jacman/_config.yml`.
+Modify settings in  `/themes/xman/_config.yml`.
 
 ## Features
 - **menu**  

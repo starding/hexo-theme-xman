@@ -13,10 +13,6 @@ footer.article-footer
   @media mini
     width 16.5em
 
-.article-share .share-jiathis
-  padding 0.5em 0
-  margin-top 0.3em
-
 .share 
   span
     float right
@@ -75,14 +71,6 @@ footer.article-footer
   &:hover
     background color-qrcode
     text-shadow 0 1px darken(color-qrcode, 20%)
-
-.article-share-renren
-  &:before
-    content "\f18b"
-  &:hover
-    background color-renren
-    text-shadow 0 1px darken(color-renren, 20%)
-
 
 .article-back-to-top
   &:before
@@ -162,19 +150,13 @@ footer.article-footer
   
 .article-categories
   color lighten(color-gray,20%)
-  // margin-top 0.3em
-  // margin-right 3em
   span
     &:before
       content "#"
       font-size: 1.2em
 
 .article-category-link
-  // padding 0.5em
-  // margin 0 0.3em
-  &:hover
-    color color-white !important
-    background color-blue
+    color color-blue
 
 //page nav
 .article-nav
@@ -187,11 +169,7 @@ footer.article-footer
   a
     display block
     overflow hidden
-  .prev,.next
-    a
-      &:hover
-        background color-blue
-        color color-white
+    color color-blue
   .prev
     width 100%
     float left

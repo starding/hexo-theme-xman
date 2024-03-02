@@ -99,6 +99,8 @@
 .rsspart
   background color-theme
   width 100%
+  &:hover
+    background lighten(color-theme, 25%)
   @media mini
     float left
     width 45%
@@ -112,9 +114,6 @@
     display block
     padding 0.625em 0
     text-align center
-    &:hover
-      color color-theme
-      background color-section
     &::before
       font-family font-icon-family
       font-smoothing()

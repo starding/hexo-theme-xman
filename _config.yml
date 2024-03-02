@@ -85,8 +85,10 @@ links:
 
 
 #### Comment
-duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
-disqus_shortname: xinghuading     ## e.g. wuchong   your disqus short name.
+giscus:
+    repo: starding/xinghua_blog_giscus  ## your gisqus repo name.
+    repo_id: R_kgDOLagm8g  ## your gisqus repo id.
+disqus_shortname:     ## xinghuading     ## e.g. wuchong   your disqus short name.
 changyan_appid:       ## changyan app id, see http://changyan.kuaizhan.com/
 changyan_appkey:      ## changyan app key, see http://changyan.kuaizhan.com/
 

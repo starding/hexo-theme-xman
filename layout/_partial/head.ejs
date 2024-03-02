@@ -26,7 +26,11 @@
     <% } %>
 
     <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
-    <%- open_graph({twitter_id: theme.author.twitter, google_plus: theme.author.google_plus}) %>
+    <%- open_graph({
+      title: page.og_title || page.title,
+      twitter_id: theme.author.twitter, 
+      google_plus: theme.author.google_plus
+    }) %>
 
     <% if (theme.rss){ %>
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">

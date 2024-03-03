@@ -91,14 +91,15 @@
       tsina = $this.attr('data-tsina'),
       description = $this.attr('description')
     var html = [
+      '<span title="Share to"></span>',
       '<div class="hoverqrcode clearfix"></div>',
       '<a class="overlay" id="qrcode"></a>',
       '<a href="https://twitter.com/intent/tweet?url=' +
         encodedUrl +
         '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
       '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
-      '<span title="Share to"></span>',
     ].join('')
+    
     $this.append(html)
 
     $('.hoverqrcode').hide()
@@ -169,17 +170,9 @@ page.comments) { %>
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   }());
 </script>
-<% } %> <% if (theme.gentie_key && page.comments){ %>
-<script>
-  var cloudTieConfig = {
-    url: document.location.href,
-    sourceId: '',
-    productKey: '<%= theme.gentie_key %>',
-    target: 'cloud-tie-wrapper',
-  }
-</script>
-<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-<% } %> <% if (theme.changyan_appid && page.comments){ %>
+<% } %> 
+
+<% if (theme.changyan_appid && page.comments){ %>
 <script type="text/javascript">
   ;(function () {
     var appid = '<%= theme.changyan_appid %>'

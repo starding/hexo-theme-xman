@@ -7,8 +7,6 @@
 
 article
   header.article-info
-    @media mini
-      // border-bottom 0.5px solid lighten(color-gray,30%)
     h1
       padding 0.2em 4%
       font-size font-size+70
@@ -26,26 +24,15 @@ article
       p.article-author
         display inline-block
         text-align left 
-        @media mini
-          border-bottom none
       p.article-time
         display: inline-block;
-        font-size 0.8em
+        font-size 0.9em
         text-align center
-        margin-bottom -2.7em
-        @media mini
-          margin-right 1em
-          padding-top 0.1em
-          font-size 0.9em
 
   .article-content
-    padding 1.5em 4%
+    padding 0.5em 4% 1.5em 4%
     color color-content
     font-size font-size
-    &:before,&:after
-      content ""
-      display block
-      clear both
     .kb
       padding .1em .6em
       border 1px solid color-gray
@@ -84,8 +71,8 @@ article
     acronym,abbr
       border-bottom 1px dotted
     blockquote
-      border-left .2em solid color-theme
-      margin 0.65em 0 0.65em 1%
+      border-left .1em solid color-theme
+      margin 0.65em 0
       padding-left 1%
       line-height line-height
       font-size font-size
@@ -117,14 +104,13 @@ article
     ul li>code,ol li>code,p code,strong code,em code,table th>code,table td>code
       font-family font-mono
       background color-code
-      color #D14
-      border 1px solid darken(color-code,10%)
+      color #FF4040
+      border 0.5px solid darken(color-code,10%)
       padding 0 5px
       margin 0 2px
       font-size 90%
       white-space nowrap
       text-shadow 0 1px #fff
-      -webkit-border-radius 0.25em
       border-radius 0.25em
     p
       line-height line-height

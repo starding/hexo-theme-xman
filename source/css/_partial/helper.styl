@@ -1,45 +1,35 @@
 footer.article-footer
+  display flex
+  justify-content space-between
   background color-section
   padding 0 4%
-  margin 0
   border-top 0.5px solid lighten(color-gray,30%)
   
-//share
-.article-share
-  float right
-  width 100%
-  @media phone
-    width 60%
-  @media mini
-    width 16.5em
-
 .share 
+  display flex
   span
-    float right
+    display inline-flex
     height 3em
     width 1em
+    align-items center
     margin-right 0.5em
-    position relative
     color lighten(color-gray,20%)
     &:before
       font-family font-icon-family
       content "\f064"
       font-size 1em
       font-smoothing()
-      absolute-center(1.5em)
   a
-    float right
     width 3em
     height 3em
-    display block
-    position relative
+    display inline-flex
+    justify-content center
+    align-items center
     &:before
       font-size 1.2em
       font-family font-icon-family
-      text-align center
       color color-font
       font-smoothing()
-      absolute-center(1.5em)
     &:hover:before
       color color-white
   
@@ -118,11 +108,8 @@ footer.article-footer
     //width 60%
 .article-tags,.article-categories
   padding 0.5em 0
-  float left
-  /**width 100%**/
   @media phonemax
     margin-right 1em !important
-    //width 100%
 
 .article-tags
   color lighten(color-gray,20%) 
@@ -160,29 +147,27 @@ footer.article-footer
 
 //page nav
 .article-nav
+  display flex
   padding 1.5em 4%
-  @media mini
-    padding 1.5em 4%
-  strong
-    font-size 1em
-    font-weight bold
   a
     display block
     overflow hidden
     color color-blue
   .prev
-    width 100%
-    float left
-    @media mini
-      width 45%
+    text-align left
+    span:before
+      content "\f053"
+      font-family font-icon-family
+      font-smoothing()
+      margin-right 0.5em
   .next
-    width 100%
-    float right
+    margin-left auto
     text-align right
-    @media mini
-      width 45%
-      span:before
-        content none
+    span:after
+        content "\f054"
+        font-family font-icon-family
+        font-smoothing()
+        margin-left 0.5em
 
 //comment
 section.comment
@@ -194,9 +179,7 @@ section.comment
   background color-code
   margin 0
   padding 1em
-  -webkit-border-radius 4px
   border-radius 4px
-  border 1px solid #ddd
   strong
     padding 0.3em 0
   ul li
@@ -267,14 +250,3 @@ section.comment
         span
           display inline  !important
           margin-left 0 !important
-          
-// giscus comments plugin style 
-.giscus
-  .gsc-comment-box-buttons
-    .btn-primary   
-      background-color color-theme
-      color color-white
-      border-color color-theme
-      &:hover
-        background-color darken(color-theme, 10%)
-        border-color darken(color-theme, 10%)

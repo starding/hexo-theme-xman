@@ -1,16 +1,7 @@
-<header class="article-info clearfix">
+<header class="article-info">
   <h1 itemprop="name"><%= item.title %></h1>
   <div class="article-info-meta">
     <p class="article-author">
-      <% if(theme.author.google_plus){ %>
-      <a
-        href="https://plus.google.com/<%=theme.author.google_plus %>?rel=author"
-        title="<%= config.author %>"
-        target="_blank"
-        itemprop="author"
-        >@<%= config.author %></a
-      >
-      <% }else{ %>
       <a
         href="<%= config.root %>about"
         title="<%= config.author %>"
@@ -18,14 +9,12 @@
         itemprop="author"
         >@<%= config.author %></a
       >
-      <% } %>
     </p>
 
     <p class="article-time">
       <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished">
-        <%= __('datepublished') %> <%= item.date.format(config.date_format)
-        %></time
-      >
+        <%= __('datepublished') %> <%= item.date.format(config.date_format) %>
+      </time>
     </p>
   </div>
 </header>

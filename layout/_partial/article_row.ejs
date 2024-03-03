@@ -7,8 +7,6 @@
 
     <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished"><%= item.date.format(config.date_format) %></time>
 
-
     <h1 itemprop="name"><% if (item.title) { %><%= item.title %><% }else{ %>&nbsp;<% } %></h1>
-
   </a>
 </section>

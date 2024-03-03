@@ -3,7 +3,7 @@
   item, index: true,desc: true}) %> <% }); %> <% if (page.total > 1){ %>
   <nav
     id="page-nav"
-    class="clearfix<% if (theme.index.expand != true) { %> unexpand<% } %>"
+    class="clearfix unexpand"
   >
     <%- paginator({ prev_text: '<span></span>', next_text: '<span></span>',
     escape: false}) %>

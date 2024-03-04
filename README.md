@@ -1,8 +1,24 @@
 # Xman
 Xman is a fresh looking and responsive theme for [Hexo](http://hexo.io) with more features and some build-in Chinese service based on [Jacman](https://github.com/wuchong/jacman).  
 
-**Xman support Hexo 4.0 now !**
-[Use Case](http://jacman.wuchong.me)
+
+## Xman Changes compared to Jacman
+**Xman support Hexo 4.0+**
+[Use Case](http://xinghua.space)
+
+**Visual elements simplified**
+* Abandoned some early material design design elements, such as excessive shadows
+* Streamline the underline decoration of each module and use more white space for visual division
+
+**Adjustments to some technical solutions based on the development of W3C and browsers in recent years**
+* Replace float layout with Grid and Flex layout (doing)
+* Gradually remove jQuery dependencies (todo)
+* Remove terminated third-party services
+  * Google+
+  * duoshuo comment
+  * netease gentie
+  * jiathis share
+
 
 ## Installation
 ### Install
@@ -21,7 +37,7 @@ git pull origin master
 
 ## Configuration
 
-Modify settings in  `/temes/xman/_config.yml`.
+Modify settings in  `/themes/xman/_config.yml`.
 
 ## Features
 - **menu**  
@@ -29,14 +45,16 @@ Modify settings in  `/temes/xman/_config.yml`.
 - **widget**  
  Widgets displaying in sidebar.The category,tag,rss,archive,tagcloud,links,weibo are supported.
 - **Image**  
- Images about favicon, site logo, author image. Support different image styles like `img-logo`,`img-topic`,`img-center` etc.
+ Images about favicon, site logo, author image. 
+ Support different image styles like `img-logo`,`img-topic`,`img-center` etc.
 - **author**  
- Author imformation, used to show your social network links on the bottom right. Including github, stackoverflow, twitter, facebook, linkedin, weibo, douban, zhihu, email.
+ Author imformation, used to show your social network links on the bottom right. 
+ Including github, stackoverflow, twitter, facebook, linkedin, weibo, douban, zhihu, email.
 - **toc**  
  Show Table Of Contents in article & aside.
 - **comments**  
  [giscus](https://giscus.app/) & [disqus](https://disqus.com/) & [畅言](http://changyan.kuaizhan.com/) are supported.
-- **jiathis**  
+- **share**  
  Build-in share tool at the bottom of articles.
 - **Analytiscs**  
  [Google analytics](http://www.google.com/analytics/) & [Baidu tongji](http://tongji.baidu.com/) & [CNZZ tongji](http://www.cnzz.com/) are all supported.

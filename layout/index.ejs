@@ -1,12 +1,15 @@
 <div id="main">
-  <% page.posts.each(function(item){ %> <%- partial('_partial/article', {item:
-  item, index: true,desc: true}) %> <% }); %> <% if (page.total > 1){ %>
-  <nav
-    id="page-nav"
-    class="clearfix unexpand"
-  >
-    <%- paginator({ prev_text: '<span></span>', next_text: '<span></span>',
-    escape: false}) %>
+  <% page.posts.each(
+    function(item){ %> 
+      <%- partial('_partial/article', 
+        {item:item, index: true, desc: true
+      }) %> 
+    <% }
+  ); %> 
+  
+  <% if (page.total > 1){ %>
+  <nav id="page-nav" class="unexpand">
+    <%- paginator({ prev_text: '<span></span>', next_text: '<span></span>', escape: false}) %>
   </nav>
   <% } %>
 </div>

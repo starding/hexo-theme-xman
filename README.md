@@ -1,6 +1,8 @@
 # Xman
 Xman is a fresh looking and responsive theme for [Hexo](http://hexo.io) with more features and some build-in Chinese service based on [Jacman](https://github.com/wuchong/jacman).  
 
+**Warning:** 
+Xman has made more and more trade-offs to the original jacman's feature set based on my personal design philosophy, mainly by greatly simplifying Widgets, sidebar, etc.
 
 ## Xman Changes compared to Jacman
 **Xman support Hexo 4.0+**
@@ -18,6 +20,11 @@ Xman is a fresh looking and responsive theme for [Hexo](http://hexo.io) with mor
   * duoshuo comment
   * netease gentie
   * jiathis share
+
+**Remove Widgets and index view model**
+* Remove github, douban, zhihu card widgets
+* Removed optional expanded view mode for home page
+* Removed sidebar hiding and display logic
 
 
 ## Installation

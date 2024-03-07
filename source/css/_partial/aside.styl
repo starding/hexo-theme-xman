@@ -1,44 +1,12 @@
-//button
-.openaside
-  display none
-  position fixed
-  right 7.5%
-  top 260px
-  a
-    display block
-    color color-white
-    border 1px solid color-white
-    border-radius 5px
-    background color-theme
-    padding 0.2em 0.55em
-    &::before
-      font-family font-icon-family
-      font-smoothing()
-      content "\f0c9"
-
-.closeaside
-  display none
-  a
-    color color-theme
-    &:hover
-      color color-blue
-    &::before
-      font-family font-icon-family
-      font-smoothing()
-      content "\f0c9"
-  @media tablet
-    display block
-    position absolute
-    right 25px
-    top 22px
-
-
 //sidebar
 #asidepart
+  display flex
+  flex-wrap wrap
   background color-section
   margin 1em 0 auto 0
   padding 0.5em 2% 1em
   @media tablet
+    flex-direction column
     width 18%
     margin 2em 0 auto 3%
 
@@ -55,13 +23,12 @@
 
 //categories
 .categorieslist
+  width 100%
   @media mini
     width 45%
-    float left
     margin 0 5% 0 0
   @media tablet 
     width 100%
-    float none
     margin 1em 0 0
   li 
     a
@@ -75,11 +42,9 @@
   margin 1em 0 0
   @media mini
     width 45%
-    float left
     margin 0 5% 0 0
   @media tablet 
     width 100%
-    float none
     margin 1em 0 0
   ul
     padding 0.5em 0
@@ -96,17 +61,14 @@
 
 //rss
 .rsspart
-  background color-theme
   width 100%
+  background color-theme
   &:hover
     background lighten(color-theme, 25%)
   @media mini
-    float left
-    width 45%
-    margin 0 5% 0 0
+    margin-top 1em 
   @media tablet 
     width 100%
-    float none
     margin 1em 0 0
   a
     color color-white
@@ -173,14 +135,13 @@
 
 //links
 .linkslist
-  margin-top 0.5em 
+  width 100%
+  margin-top 1em 
   @media mini
     width 45%
-    float left
     margin 0 5% 0 0
   @media tablet 
     width 100%
-    float none
     margin 1em 0 0
   ul
     padding 0.5em 0
@@ -192,45 +153,3 @@
       &:hover
         color color-theme
         transition color .25s
-
-//weibo
-.weiboshow
-  margin-top 0.5em 
-  @media mini
-    width 45%
-    float left
-    margin 0 5% 0 0
-  @media tablet 
-    width 100%
-    float none
-    margin 1em 0 0
-  iframe
-    padding 0.5em 0
-
-//douban
-.doubanshow
-  margin-top 0.5em
-  @media mini
-    width 45%
-    float left
-    margin 0 5% 0 0
-  @media tablet
-    width 100%
-    float none
-    margin 1em 0 0
-  div
-    padding 0.5em 0
-
-//github-card
-.github-card
-  margin-top 1.5em
-  @media mini
-    width 45%
-    float left
-    margin 0 5% 0 0
-  @media tablet
-    width 100%
-    float none
-    margin 1em 0 0
-  div
-    padding 0.5em 0

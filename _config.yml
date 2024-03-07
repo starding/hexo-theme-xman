@@ -12,13 +12,10 @@ menu:
 
 #### Widgets
 widgets: 
-#- github-card
 - category
 #- tag
 - links
 - rss
-#- douban
-  ## provide eight widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo
 
 
 #### RSS 
@@ -27,15 +24,13 @@ rss: /atom.xml ## RSS address.
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
-  src: img/logo_red_yao.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
-favicon: img/favicon_red_only_yao.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
-apple_icon: img/red_logo_yao.png ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+  src: img/logo_red_yao.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/hexo-theme-xman/source/img`.
+favicon: img/favicon_red_only_yao.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/hexo-theme-xman/source/img`.     
+apple_icon: img/apple_icon_yao.png ## size:114px*114px,please put image into the theme folder `/hexo-theme-xman/source/img`.
 author_img: img/author.png ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
 banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 ### Theme Color 
 theme_color:
-    # theme: '#158553'    ##老 color
-    # theme: '#010920'    ##the defaut theme color is green
     theme: '#000000'    ##the defaut theme color is green
 
 # 代码高亮主题

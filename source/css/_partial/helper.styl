@@ -37,7 +37,7 @@ footer.article-footer
   &:before
     content "\f099"
   &:hover
-    background color-twitter
+    color color-theme
     text-shadow 0 1px darken(color-twitter, 20%)
 
 .article-share-facebook
@@ -56,10 +56,10 @@ footer.article-footer
 
 .article-share-qrcode
   &:before
-    font-family font-icon-diao !important
+    font-family font-icon-family
     content "\f132"
   &:hover
-    background color-qrcode
+    color color-theme
     text-shadow 0 1px darken(color-qrcode, 20%)
 
 .article-back-to-top
@@ -72,7 +72,7 @@ footer.article-footer
 //qrcode
 .hoverqrcode
   background color-white
-  border 3px solid #2ca6cb
+  border 3px solid color-theme
   border-radius 10px
   display inline-block
   position absolute

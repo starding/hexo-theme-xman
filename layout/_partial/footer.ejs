@@ -17,7 +17,7 @@
         </section>
         <% } %>
       </section>
-      <div class="social-font" class="clearfix">
+      <div class="social-font font-icon-family" class="clearfix">
         <% if(theme.author.weibo){ %>
         <a
           href="http://weibo.com/<%= theme.author.weibo %>"
@@ -39,26 +39,19 @@
           class="icon-stack-overflow"
           title="stackoverflow"
         ></a>
+        <% } %> <% if(theme.author.jike){ %>
+        <a
+          href="https://web.okjike.com/u/<%=theme.author.jike %>"
+          target="_blank"
+          class="icon-jike"
+          title="jike"
+        ></a>
         <% } %> <% if(theme.author.twitter){ %>
         <a
           href="https://twitter.com/<%=theme.author.twitter %>"
           target="_blank"
           class="icon-twitter"
           title="twitter"
-        ></a>
-        <% } %> <% if(theme.author.facebook){ %>
-        <a
-          href="https://www.facebook.com/<%=theme.author.facebook %>"
-          target="_blank"
-          class="icon-facebook"
-          title="facebook"
-        ></a>
-        <% } %> <% if(theme.author.linkedin){ %>
-        <a
-          href="https://www.linkedin.com/in/<%=theme.author.linkedin %>"
-          target="_blank"
-          class="icon-linkedin"
-          title="linkedin"
         ></a>
         <% } %> <% if(theme.author.douban){ %>
         <a

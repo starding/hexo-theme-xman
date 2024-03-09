@@ -21,9 +21,10 @@ Xman has made more and more trade-offs to the original jacman's feature set base
   * netease gentie
   * jiathis share
 
-**Remove Widgets and index view model**
-* Remove github, douban, zhihu card widgets
+**Remove index view model, custom font and widgets**
 * Removed optional expanded view mode for home page
+* Remove custom font
+* Remove github, douban, zhihu card widgets
 * Removed sidebar hiding and display logic
 
 

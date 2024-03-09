@@ -88,7 +88,7 @@ changyan_appkey:      ## changyan app key, see http://changyan.kuaizhan.com/
 #### Google Analytics 4
 google_analytics_4:
   enable: true
-  TAG_ID: G-K5Z9WLE5XK
+  TAG_ID: G-V9SXMWSY9Z
 
 baidu_tongji:
   enable: true

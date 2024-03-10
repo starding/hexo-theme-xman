@@ -100,19 +100,17 @@ header nav
 .search
   padding 0.2em 0.2em 0.2em 0
   input
+    width 8em
+    padding-left 0.5em
     -webkit-appearance textfield
-    font-size 0.87em
+    font-size 0.8em
     line-height line-height+0.2
     border 1px solid color-white
-    border-radius 2px
     color color-white
     background transparent
-    width 50%
-    padding-left 0.5em
     @media tablet
-      width 8em
-      transition .5s width
       &:focus
         width 15em
+      transition .5s width
   label
     display none

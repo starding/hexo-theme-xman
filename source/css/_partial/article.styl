@@ -49,13 +49,15 @@ article
       font-size font-size+80
       line-height 1.2em
       padding-bottom 0.2em
-      margin-top 1.5em
-      // border-bottom 2px solid lighten(color-gray,30%)
+      margin-top 1.4em
+      font-weight 500
     h3
       font-size font-size+40
+      font-weight 500
       line-height 1em
-      margin-top 1.3em
+      margin-top 1.2em
     h4,h5,h6
+      margin-top 1em
       font-size font-size+40
     h1,h2,h3,h3,h4,h5,h6
       color color-heading
@@ -63,7 +65,7 @@ article
       >code
         color darken(color-gray,20%)
     hr 
-      border 1px solid lighten(color-gray,30%)
+      border 0.5px solid lighten(color-gray,30%)
     strong
       font-weight bold
     em
@@ -86,11 +88,10 @@ article
       cite
         font-style italic
         padding-left 0.5em
-    ul,ol
-      padding-left 1.1em
-      font-size font-size
-      padding-top 0.7em
     ul
+      padding-left 1em
+      font-size font-size
+      padding-top 0.5em
       list-style-type disc
     ul ul
       list-style-type circle
@@ -101,6 +102,9 @@ article
       &::marker
         color color-blue
     ol 
+      padding-left 1.2em
+      font-size font-size
+      padding-top 0.5em
       list-style-type decimal   
     ol ol
       list-style-type lower-alpha
@@ -124,7 +128,7 @@ article
       border-radius 0.25em
     p
       line-height line-height
-      margin-top 0.7em
+      margin-top 0.75em
       @media tablet
         margin-top 1em
     img,video,figure img

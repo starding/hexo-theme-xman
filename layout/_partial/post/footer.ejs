@@ -1,24 +1,26 @@
 <footer class="article-footer">
-  <%- partial('catetags') %> <% if (!index){ %>
-  <div class="article-share" id="share">
-    <div
-      data-url="<%- item.permalink %>"
-      data-title="<% if (item.title){ %><%= item.title %> | <% } %><%= config.title %>"
-      data-tsina="<%= theme.author.tsina %>"
-      class="share"
-    ></div>
-  </div>
-  <% } %> <% if (index){ %>
-  <div class="comments-count">
-    <% if(config.disqus_shortname || theme.disqus_shortname){ %>
-    <span></span>
-    <a
-      href="<%- config.root %><%- item.path %>#disqus_thread"
-      class="comments-count-link"
-      >
-      Comments
-    </a>
-    <% } %>
-  </div>
+  <%- partial('catetags') %> 
+  <% if (!index){ %>
+    <div class="article-share" id="share">
+      <div
+        data-url="<%- item.permalink %>"
+        data-title="<% if (item.title){ %><%= item.title %> | <% } %><%= config.title %>"
+        data-tsina="<%= theme.author.tsina %>"
+        class="share"
+      ></div>
+    </div>
+    <% } %> 
+  <% if (index){ %>
+    <div class="comments-count">
+      <% if(config.disqus_shortname || theme.disqus_shortname){ %>
+      <span></span>
+      <a
+        href="<%- config.root %><%- item.path %>#disqus_thread"
+        class="comments-count-link"
+        >
+        Comments
+      </a>
+      <% } %>
+    </div>
   <% } %>
 </footer>

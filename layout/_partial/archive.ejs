@@ -1,12 +1,27 @@
-<% var title = '';var icon = '';if (page.category) {title = page.category;icon = 'category';};if (page.tag) {title = page.tag;icon = 'tag';};if (page.archive) {icon = 'archive';if (page.year) title = page.year + (page.month ?'/' + page.month : '');else title = __('archive_a');}; %>
-<div class="archive-title">
-    <h2 class="<%= icon %>-icon">
-        <%= title %>
-    </h2>
+<% var title = '';
+    var icon = '';
+    if (page.category) {
+        title = page.category;
+        icon = 'category';
+    };    
+    if (page.tag) {
+        title = page.tag;
+        icon = 'tag';
+    };
+    if (page.archive) {
+        icon = 'archive';
+        if (page.year) title = page.year + (page.month ?'/' + page.month : '');else title = __('archive_a');
+    }; 
+%>
+
+<div class="archiveslist-view">
+    <div class="archive-title">
+        <h2 class="<%= icon %>-icon">
+            <%= title %>
+        </h2>
+    </div>
     <% if (page.archive) { %>
-        <div class="archiveslist">
-            <%- list_archives({format: __('archive_date')}) %>
-        </div>
+        <%- list_archives({format: __('archive_date')}) %>
     <% } %>
 </div>
 <div id="main" class="archive-part">

@@ -1,8 +1,8 @@
 ##### Menu
 menu:
   主页: /
-  归档: /archives
-  关于: /about
+  时间线: /archives
+  关于我: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -13,10 +13,11 @@ menu:
 #### Widgets
 widgets: 
 - category
-#- tag
+- tag
+#- tagcloud
+- archive
 - links
 - rss
-
 
 #### RSS 
 rss: /atom.xml ## RSS address.
@@ -33,12 +34,9 @@ banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 theme_color:
     theme: '#000000'    ##the defaut theme color is green
 
-# 代码高亮主题
+# 代码高亮主题/数学公式支持
 # available: default | night
-highlight_theme:  default 
-
-
-close_aside: false  #close sidebar in post page if true
+highlight_theme: default 
 mathjax: false      #enable mathjax if true
 
 ### Creative Commons License Support, see http://creativecommons.org/ 
@@ -62,19 +60,18 @@ author:
 #  stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
 
-#### Toc
-toc:
-  article: true   ## show contents in article.
-  aside: true     ## show contents in aside.
-## you can set both of the value to true of neither of them.
-## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
 #### Links
 links:
   黄龑: http://finaltheory.me/, 18~26 岁期间对我影响很大的同学
   硅谷王川: https://chuan.us, 虽然不认识，但 30 岁之后我从他的言论中学到了很多
 
-
+#### Toc
+toc:
+  article: true   ## show contents in article.
+  aside: true     ## show contents in aside.
+## you can set both of the value to true of neither of them.
+## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
 #### Comment
 giscus:
@@ -91,8 +88,8 @@ google_analytics_4:
   TAG_ID: G-V9SXMWSY9Z
 
 baidu_tongji:
-  enable: true
-  sitecode: e6d1f421bbc9962127a50488f9ed37d1 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  enable: false
+  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id

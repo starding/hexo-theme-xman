@@ -113,28 +113,45 @@
   content "\f07b"
 
 .tag-icon:before
-  content "\f02c"
+  content "#"
+  font-size 1em
   
 
-.archive-title
-  margin 1em 0 auto 0
+.archiveslist-view
+  display flex
+  flex-direction column
+  flex-grow 1
+  margin 2em 0 auto 0
   padding 0.5em
-  @media tablet
-    margin 2em 0 auto 0
-    width 18.5%
-    padding-left 0.5%
   background color-section
-  h2
-    width 90%
-    padding-left 0.5em
-    color color-title
-    font-size font-size+20
-  a
-    color color-blue
-    transition color .5s
-    &:hover
-      color color-theme
+  .archive-title
+    padding 0 0.5em
+    h2
+      color color-title
+      font-size font-size+20
+    a
+      color color-blue
       transition color .5s
+      &:hover
+        color color-theme
+        transition color .5s
+  .archive-list 
+    padding 0.5em 
+    li 
+      font-size 0.8em
+      line-height 2em
+      a
+        &:hover
+          color color-theme
+          transition color .25s
+    .archive-list-count
+      padding 0.5em
+      &:before
+        content "("
+      &:after
+        content ")"
+
+
 
 .archive-part
   @media mini

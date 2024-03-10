@@ -5,12 +5,11 @@ footer.article-footer
   padding 0 4%
   border-top 0.5px solid lighten(color-gray,30%)
   
-.share 
+#share 
   display flex
+  align-items center
   span
     display inline-flex
-    height 3em
-    width 1em
     align-items center
     margin-right 0.5em
     color lighten(color-gray,20%)
@@ -104,33 +103,22 @@ footer.article-footer
 
 //tags&categories
 .article-catetags
-  @media mini
-    //width 60%
+  display flex
+  align-items center
 .article-tags,.article-categories
-  padding 0.5em 0
-  @media phonemax
-    margin-right 1em !important
+  display flex
+  align-items center
+  padding 0.5em 0.2em 0.5em 0
 
 .article-tags
-  color lighten(color-gray,20%) 
-  @media phonemax
-    margin-left 0
-  span
-    position relative
-    float left
-    width 1em
-    height 2em
-    margin-right 0.5em
+  a
+    padding 0 0.2em
     &:before
+      content "#"
+      padding-right 0.1em
       font-family font-icon-family
       font-smoothing()
-      absolute-center(1.2em)
-      content "\f02c"
-  a
-    float left
-    padding 0 0.3em
-    margin 0.3em
-    background lighten(color-gray,50%)
+      color color-gray
     &:hover
       color color-white
       background color-blue
@@ -139,7 +127,8 @@ footer.article-footer
   color lighten(color-gray,20%)
   span
     &:before
-      content "#"
+      font-family font-icon-family
+      content "\f07b"
       font-size: 1.2em
 
 .article-category-link

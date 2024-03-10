@@ -1,4 +1,4 @@
-categories: 我对内容的分类
+categories: 分类
 search: 搜索
 tags: 标签
 tagcloud: 标签云
@@ -6,8 +6,8 @@ prev: 上一页
 next: 下一页
 comment: 文章评论
 contents: 文章目录
-archive_a: 归档
-archive_b: 归档：%s
+archive_a: 时间线 
+archive_b: 时间线：%s
 archive_date: "YYYY 年 MM 月"
 page: 第 %d 页
 recent_posts: 近期文章

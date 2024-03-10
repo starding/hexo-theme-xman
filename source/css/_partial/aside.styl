@@ -1,10 +1,13 @@
 //sidebar
 #asidepart
   display flex
+  flex-direction column
   flex-wrap wrap
   background color-section
   margin 1em 0 auto 0
   padding 0.5em 2% 1em
+  @media mini
+    flex-direction row
   @media tablet
     flex-direction column
     width 18%
@@ -12,39 +15,47 @@
 
 .asidetitle
   font-size 1.1em
-  color #413f3f
+  color color-title
   padding 0 0 0.3em 0
   border-bottom 0.5px solid color-gray
   a
-    color color-blue
+    color color-title
     &:hover
       color color-theme
       transition color .5s
 
 //categories
 .categorieslist
-  width 100%
+  display flex
+  flex-direction column 
+  flex-grow 1
   @media mini
-    width 45%
-    margin 0 5% 0 0
+    margin 0 2% 0 0
   @media tablet 
-    width 100%
     margin 1em 0 0
   li 
     a
       display block
       padding 0.2em 0
+      &::before
+        content "\f07b"
+        font-family font-icon-family
+        font-size 1em
+        font-smoothing()
+        padding-right 0.2em
       &:hover
         color color-theme
 
+
 //tag
 .tagslist
+  display flex
+  flex-direction column 
+  flex-grow 1
   margin 1em 0 0
   @media mini
-    width 45%
-    margin 0 5% 0 0
+    margin 0 2% 0 0
   @media tablet 
-    width 100%
     margin 1em 0 0
   ul
     padding 0.5em 0
@@ -52,13 +63,91 @@
     float left
     a
       display block
-      margin 0.3125em
-      padding 0.125em 0.3125em
-      background lighten(color-gray, 30%)
+      padding 0.125em 0.4em 0.125em 0
+      &::before
+        content "#"
+        font-family font-icon-family
+        font-size 1em
+        font-smoothing()
+        padding-right 0.2em
       &:hover
         color color-theme
-        background lighten(color-gray, 50%)
 
+//tagcloud
+.tagcloudlist-wrapper
+  display flex
+  flex-direction column 
+  flex-grow 1
+  @media mini
+    margin 0 2% 0 0
+  @media tablet 
+    margin 1em 0 0
+  .tagcloudlist
+    display flex
+    a
+      padding 0.2em
+      display block
+      &::before
+        content "#"
+        font-family font-icon-family
+        font-size 1em
+        font-smoothing()
+        padding-right 0.1em
+      &:hover
+        color color-theme
+        transition color .25s
+
+//archive
+.archiveslist
+  display flex
+  flex-direction column
+  flex-grow 1
+  padding-right 0.5em
+  @media mini
+    margin 0 2% 0 0
+  @media tablet 
+    margin 1em 0 0
+  .archive-list 
+    padding 0.5em 0 
+  li 
+    font-size 0.8em
+    line-height 2em
+    a
+      &:hover
+        color color-theme
+        transition color .25s
+  .archive-list-count
+    padding 0.5em
+    &:before
+      content "("
+    &:after
+      content ")"
+      
+
+//links
+.linkslist
+  display flex
+  flex-direction column
+  flex-grow 1
+  margin-top 1em 
+  @media mini
+    // width 45%
+    margin 0 2% 0 0
+  @media tablet 
+    // width 100%
+    margin 1em 0 0
+  ul
+    padding 0.5em 0
+    a
+      font-size 1em
+      line-height line-height
+      display block
+      padding 0.2em 0
+      &:hover
+        color color-theme
+        transition color .25s
+        
+        
 //rss
 .rsspart
   width 100%
@@ -82,75 +171,3 @@
       padding-right 0.2em
       content "\e883"
 
-//archive
-.archiveslist
-  padding-right 1em
-  @media tablet 
-    width 100%
-    float none
-    margin 1em 0 0
-  li 
-    font-size 0.8em
-    line-height 2em
-    a
-      padding 0.5em
-      &:hover
-        color color-theme
-        transition color .25s
-  .archive-list-count
-    &:before
-      content "("
-    &:after
-      content ")"
-          
-.archive-list 
-  padding 0.5em 0 
-
-.archive-float 
-  ul
-    padding 0 
-  li
-    float left
-    margin 0.3em
-    @media tablet
-      float none
-
-//tagcloud
-.tagcloudlist
-  @media mini
-    width 45%
-    float left
-    margin 0 5% 0 0
-  @media tablet 
-    width 100%
-    float none
-    margin 1em 0 0
-  .tagcloudlist
-    a
-      padding 0.2em
-      display block
-      float left
-      &:hover
-        color color-theme
-        transition color .25s
-
-//links
-.linkslist
-  width 100%
-  margin-top 1em 
-  @media mini
-    width 45%
-    margin 0 5% 0 0
-  @media tablet 
-    width 100%
-    margin 1em 0 0
-  ul
-    padding 0.5em 0
-    a
-      font-size 1em
-      line-height line-height
-      display block
-      padding 0.2em 0
-      &:hover
-        color color-theme
-        transition color .25s
